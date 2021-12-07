@@ -47,6 +47,6 @@ const bookList = interpret(bookListMachine)
 .onTransition((state) => console.log(state.value))
 .start();
 
-//bookList.send('FETCH_FAILED')
-//bookList.send('FETCH_RETRY')
+bookList.send('FETCH_FAILED')
+bookList.send('FETCH_RETRY')
 bookList.send('FETCH_SUCCESS')
