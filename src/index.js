@@ -49,4 +49,4 @@ const bookList = interpret(bookListMachine)
 
 bookList.send('FETCH_FAILED')
 bookList.send('FETCH_RETRY')
-// bookList.send('FETCH_SUCCESS')
+bookList.send('FETCH_SUCCESS')
